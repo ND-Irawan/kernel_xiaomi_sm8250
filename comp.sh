@@ -8,7 +8,8 @@ export KBUILD_BUILD_USER=Irwn
 export KBUILD_BUILD_HOST=ndrα_irαwαn
 export PATH="$CLANGDIR/bin:$PATH"
 
-make O=out ARCH=arm64 elegy-alioth_defconfig
+make O=out ARCH=arm64 /vendor/kona_defconfig
+                            /vendor/xiaomi/alioth.config
 
 nd () {
 make -j$(nproc --all) O=out LLVM=1 LLVM_IAS=1 \
